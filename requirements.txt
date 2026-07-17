@@ -1,0 +1,11 @@
+# Runtime dependencies
+# This project uses only the Python standard library for core analysis.
+# The packages below are for testing and development only.
+
+# Testing
+pytest>=7.4
+pytest-cov>=4.1
+
+# Optional: linting (not required to run the tool)
+# flake8>=6.0
+# mypy>=1.5
