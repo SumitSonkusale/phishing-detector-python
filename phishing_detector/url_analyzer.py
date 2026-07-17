@@ -115,9 +115,9 @@ def _check_suspicious_tld(host: str, evidence: str) -> List[Finding]:
 
 
 def _check_excessive_subdomains(host: str, evidence: str) -> List[Finding]:
-    """Flag domains with 4+ labels — a common trick to hide the true registrable domain."""
+    """Flag domains with 5+ labels — a common trick to hide the true registrable domain."""
     labels = host.split(".")
-    if len(labels) >= 4:
+    if len(labels) >= 5:
         return [Finding(
             category="URL",
             rule="EXCESSIVE_SUBDOMAINS",
